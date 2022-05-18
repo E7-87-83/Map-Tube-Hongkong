@@ -52,7 +52,7 @@ to I<END> is returned.
 
 =head1 BUGS/TODOS
 
-The script has not yet optimize to reduce the number of line transitions. For example, normally, the quickest route from Kowloon Tong to Yau Ma Tei is simply travelled through the Kwun Tong Line. However, the current script displays the following suggestion:
+The script has not yet optimized to reduce the number of line transitions. For example, normally, the quickest route from Kowloon Tong to Yau Ma Tei is simply travelled through the Kwun Tong Line. However, the current script displays the following suggestion:
 
 =over
 
