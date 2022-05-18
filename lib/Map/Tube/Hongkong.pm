@@ -45,6 +45,7 @@ It currently provides functionality to find the shortest route between the two g
 This method expects two parameters I<START> and I<END> station name.
 Station names are case insensitive. The station sequence from I<START>
 to I<END> is returned.
+
     use Map::Tube::Hongkong;
     my $tube = Map::Tube::Hongkong->new;
     my $route = $tube->get_shortest_route('Yau Ma Tei', 'Mei Foo');
