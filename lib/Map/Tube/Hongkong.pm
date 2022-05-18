@@ -3,7 +3,7 @@ package Map::Tube::Hongkong;
 use strict;
 use warnings;
 
-our $VERSION = '0.03';     # fix pod, until new functionalities are added
+our $VERSION = '0.03';
 
 # ABSTRACT: Map::Tube::Hongkong - interface to the Hongkong MTR map
 
@@ -23,11 +23,11 @@ __END__
 
 =head1 NAME
 
-Map::Tube::Hongkong - Map::Tube::Hongkong - interface to the Hongkong MTR map.
+Map::Tube::Hongkong - interface to the Hongkong MTR map.
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 DESCRIPTION
 
@@ -88,12 +88,17 @@ If you ask the reverse - its suggestion of how to get from Yau Ma Tei to Kowloon
 
 L<Map::Tube>.
 
-
 =head1 REPOSITORY
 
 L<https://github.com/E7-87-83/Map-Tube-Hongkong>
 
 =head1 AUTHOR
+
+FUNG Cheok Yin <fungcheokyin@gmail.com>
+
+=head1 CONTRIBUTORS
+
+Mohammad S Anwar <mohammad.anwar@yahoo.com>
 
 FUNG Cheok Yin <fungcheokyin@gmail.com>
 
