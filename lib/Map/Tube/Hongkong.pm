@@ -23,7 +23,7 @@ __END__
 
 =head1 NAME
 
-Map::Tube::Hongkong - interface to the Hongkong MTR map.
+Map::Tube::Hongkong - Interface to the Hong Kong MTR map.
 
 =head1 VERSION
 
