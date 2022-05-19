@@ -1,5 +1,9 @@
 Revision history for Perl extension Map::Tube::Hongkong.
 
+0.04.1 Fri May 20 07:15:00 2022
+    - Common line issue is solved in Map-Tube-3.66.
+    - Add dependencies. Require utf8 for future development.
+
 0.03  Wed May 19 03:00:00 2022
     - fix pod
     - correct Makefile.PL (by Mohammad S Anwar, the author of Map::Tube)

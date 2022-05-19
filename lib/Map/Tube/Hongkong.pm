@@ -1,11 +1,11 @@
 package Map::Tube::Hongkong;
-
+use utf8;
 use strict;
 use warnings;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04.1';
 
-# ABSTRACT: Map::Tube::Hongkong - interface to the Hongkong MTR map
+# ABSTRACT: Map::Tube::Hongkong - Interface to the Hong Kong MTR map
 
 use File::Share ':all';
 
@@ -27,7 +27,7 @@ Map::Tube::Hongkong - interface to the Hongkong MTR map.
 
 =head1 VERSION
 
-version 0.03
+version 0.04.1
 
 =head1 DESCRIPTION
 
@@ -53,37 +53,12 @@ to I<END> is returned.
 
 =head1 BUGS/TODOS
 
-The script has not yet optimized to reduce the number of line transitions. For example, normally, the quickest route from Kowloon Tong to Yau Ma Tei is simply travelled through the Kwun Tong Line. However, the current script displays the following suggestion:
+Provide support for station names in Chinese.
 
-=over
+Maybe something look like:
 
-=item 1. Kowloon Tong (East Rail Line, Kwun Tong Line), 
+    my $route = $tube->get_shortest_route('油麻地', '美孚')->name_alt;
 
-=item 2. Mong Kok East (East Rail Line), 
-
-=item 3. Hung Hom (East Rail Line, Tuen Ma Line), 
-
-=item 4. Ho Man Tin (Kwun Tong Line, Tuen Ma Line), 
-
-=item 5. Yau Ma Tei (Kwun Tong Line, Tsuen Wan Line).
-
-=back
-
-If you ask the reverse - its suggestion of how to get from Yau Ma Tei to Kowloon Tong, the script gives a reasonable suggestion:
-
-=over
-
-=item 1. Yau Ma Tei (Kwun Tong Line, Tsuen Wan Line),
-
-=item 2. Mong Kok (Kwun Tong Line, Tsuen Wan Line),
-
-=item 3. Prince Edward (Kwun Tong Line, Tsuen Wan Line),
-
-=item 4. Shek Kip Mei (Kwun Tong Line),
-
-=item 5. Kowloon Tong (East Rail Line, Kwun Tong Line).
-
-=back
 
 =head1 SEE ALSO
 

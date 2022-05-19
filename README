@@ -1,5 +1,5 @@
-Map-Tube-Hongkong version 0.03
-==============================
+Map-Tube-Hongkong version 0.04.1
+================================
 
 The README is used to introduce the module and provide instructions on
 how to install the module, any machine dependencies it may have (for
@@ -26,6 +26,7 @@ DEPENDENCIES
 This module requires these other modules and libraries:
 
   Map::Tube
+  File::Share
 
 COPYRIGHT AND LICENCE
 

@@ -6,15 +6,33 @@ use File::ShareDir::Install;
 
 install_share dist => 'share';
 
+my $github = "https://github.com/E7-87-83/Map-Tube-Hongkong";
+
 WriteMakefile(
     NAME              => 'Map::Tube::Hongkong',
-    VERSION_FROM      => 'lib/Map/Tube/Hongkong.pm', # finds $VERSION, requires EU::MM from perl >= 5.5
-    PREREQ_PM         => {}, # e.g., Module::Name => 1.1
-    ABSTRACT_FROM     => 'lib/Map/Tube/Hongkong.pm', # retrieve abstract from module
+    VERSION_FROM      => 'lib/Map/Tube/Hongkong.pm', 
+    PREREQ_PM         => {
+        'utf8'        => 0,
+        'File::Share' => '0.25',
+        'Map::Tube'   => '3.66', 
+    },
+    ABSTRACT_FROM     => 'lib/Map/Tube/Hongkong.pm', 
     AUTHOR            => 'FUNG Cheok Yin <fungcheokyin@gmail.com>',
     LICENSE           => 'perl',
-    #Value must be from legacy list of licenses here
-    #http://search.cpan.org/perldoc?Module%3A%3ABuild%3A%3AAPI
+    'META_MERGE' => {
+            resources => {
+                    repository => {
+                            type => 'git',
+                            url  => "$github.git",
+                            web  => $github,
+                            },
+                    bugtracker => {
+                            web    => "$github/issues",
+                            },
+                    homepage => $github,
+                    },
+            },
+
 );
 
 package MY;
